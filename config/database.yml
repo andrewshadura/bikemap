@@ -26,7 +26,7 @@ development:
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
   #host: localhost
-  #port: 5432
+  port: 5433
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -49,6 +49,7 @@ test:
   pool: 5
   username: jek
   password:
+  port: 5433
 
 production:
   adapter: postgis
@@ -59,3 +60,4 @@ production:
   pool: 5
   username: jek
   password:
+  port: 5433
