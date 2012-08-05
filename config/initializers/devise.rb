@@ -208,10 +208,11 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
 
-  config.omniauth :facebook, "423233384387219", "6e17440c786547d27e6269a76890e7ba"
-  config.omniauth :vkontakte, "3072408", "fWBO7azMQHr7AlUAEcm3", :scope => 'notify'
-  config.omniauth :google_oauth2, "34913972516-0tbakt53smtlst6d59jbs2h928qg7i0b.apps.googleusercontent.com", "85CTTgAIclSqMWdL1OWsi84M", access_type: 'online',  approval_prompt: ''
-  config.omniauth :mailru, "683803", "8f85e05da91ada1d4633a08bac2dc881"
+  config.omniauth :facebook, "345489998861303", "a43f189b95d918b278aa0fecddee3148",
+	  :client_options => { :ssl => { :ca_path => "/etc/ssl/certs" }}
+  config.omniauth :vkontakte, "3073479 ", "iM2DG5KOODr2G6Baki1Z", :scope => 'notify'
+  config.omniauth :google_oauth2, "34913972516.apps.googleusercontent.com", "9IYKl6uG0bepCuykN4vIm9Ll", access_type: 'online',  approval_prompt: ''
+  config.omniauth :mailru, "683899", "ea6358990162a38f14301598b7797c06"
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
