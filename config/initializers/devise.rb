@@ -210,7 +210,7 @@ Devise.setup do |config|
 
   config.omniauth :facebook, "345489998861303", "a43f189b95d918b278aa0fecddee3148",
 	  :client_options => { :ssl => { :ca_path => "/etc/ssl/certs" }}
-  config.omniauth :vkontakte, "3073479 ", "iM2DG5KOODr2G6Baki1Z", :scope => 'notify'
+  config.omniauth :vkontakte, "3073479", "iM2DG5KOODr2G6Baki1Z", :scope => 'notify'
   config.omniauth :google_oauth2, "34913972516.apps.googleusercontent.com", "9IYKl6uG0bepCuykN4vIm9Ll", access_type: 'online',  approval_prompt: ''
   config.omniauth :mailru, "683899", "ea6358990162a38f14301598b7797c06"
 
